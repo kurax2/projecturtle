@@ -6,19 +6,18 @@ import { CssBaseline, Typography } from '@mui/material';
 function App() {
   return (
     <div className="App">
+      <CssBaseline/>
       <header className="App-header">
-        
-        <p>
+        <Typography variant='h5'>
         projecturtle in progress ...
-        </p>
-         
-       
-        
-        
+        </Typography>
       </header>
-
-      <Bio/>
-      <Socials/>
+      <body className='Bio'>
+        <Bio/>
+      </body>
+      <body className='Soc'>
+        <Socials/>
+      </body>
       
     </div>
   );
@@ -27,10 +26,9 @@ function App() {
 function Bio(){
   return(
     <>
-      <CssBaseline/>
-      <Typography variant='body1'>hi, Kura here </Typography>
-      <Typography variant='body1'>i'm currently learning </Typography>
-      <img src={logo} className="App-logo" alt="logo"/>
+      <Typography variant='body1' align='center'>hi, Kura here </Typography>
+      <Typography variant='body1' align='center'>i'm currently learning </Typography>
+      <img src={logo} className="App-logo" alt="logo" />
     </>
   )
 }
@@ -48,7 +46,9 @@ function Socials(){
           >
             <InstagramIcon/>
         </a>
-        </div>
+      </div>
+      
+      
         
     </>
   
