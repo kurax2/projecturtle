@@ -3,21 +3,25 @@ import './App.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { CssBaseline, Typography } from '@mui/material';
 
+
+
 function App() {
   return (
     <div className="App">
       <CssBaseline/>
-      <header className="App-header">
+      <header className="App-header" >
         <Typography variant='h5'>
         projecturtle in progress ...
         </Typography>
       </header>
-      <body className='Bio'>
-        <Bio/>
+      <body className='Bio' >
+        <Bio />
+        <SocialFollow/>
       </body>
-      <body className='Soc'>
-        <Socials/>
-      </body>
+    
+      
+     
+      
       
     </div>
   );
@@ -33,26 +37,37 @@ function Bio(){
   )
 }
 
-function Socials(){
-  return(
-    <>
-      <CssBaseline/>
-        <div>
-        <a
-            className="App-link"
-            href="https://reactjs.org"
+function SocialFollow () {
+  return (
+    
+    <div className="social-follow">
+      <a className="insta"
+            href="https://www.instagram.com/kurax2_/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramIcon/>
-        </a>
-      </div>
-      
-      
-        
-    </>
-  
-  )
-}
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon/>
+      </a>
+
+      <a className="insta"
+            href="https://www.instagram.com/kurax2_/"
+            target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon/>
+      </a>
+
+      <a className="insta"
+            href="https://www.instagram.com/kurax2_/"
+            target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon/>
+      </a>
+     
+    </div>
+    
+  );
+};
 
 export default App;

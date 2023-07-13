@@ -29,10 +29,6 @@
   color: #AECFA4;
 }
 
-.App-link {
-  color: #AECFA4;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -41,6 +37,37 @@
     transform: rotate(360deg);
   }
 }
+
+.social-follow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  z-index: 9999;
+ 
+}
+
+.social-follow a {
+  margin-left: 10px;
+  color: #ffff;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-follow a:hover {
+  background-color: #666;
+}
+
+
+
 
 
 
